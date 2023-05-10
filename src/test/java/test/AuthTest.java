@@ -1,16 +1,16 @@
 package test;
 
+import Data.DataHelper;
+import Page.LoginPage;
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import Data.DataHelper;
-import Page.LoginPage;
 
-
-import static com.codeborne.selenide.Selenide.open;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static Data.DataHelper.getFirstCardInfo;
 import static Data.DataHelper.getSecondCardInfo;
+import static com.codeborne.selenide.Selenide.open;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 class MoneyTransferTest {
 
