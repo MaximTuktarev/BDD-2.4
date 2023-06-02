@@ -3,11 +3,9 @@ package test;
 import Data.DataHelper;
 import Page.LoginPage;
 import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 
 import static Data.DataHelper.getFirstCardInfo;
 import static Data.DataHelper.getSecondCardInfo;
@@ -16,17 +14,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 class MoneyTransferTest {
-    private WebDriver driver;
 
-    @BeforeAll
-    static void SetUpAll() {
-        System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
-    }
+
 
     @BeforeEach
     void SetUp() {
         Configuration.holdBrowserOpen = true;
-        
+
     }
 
     @Test
